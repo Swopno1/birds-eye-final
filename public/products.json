@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "name": "DJI Mavic 3",
+    "brand": "Mavic",
+    "price": 1249,
+    "img": "drone-1"
+  },
+  {
+    "id": "2",
+    "name": "DJI Mini 2",
+    "brand": "DJI",
+    "price": 449,
+    "img": "drone-2"
+  },
+  {
+    "id": "3",
+    "name": "DJI Air 2S",
+    "brand": "DJI",
+    "price": 539,
+    "img": "drone-3"
+  },
+  {
+    "id": "4",
+    "name": "Autel EVO Nano",
+    "brand": "Autel",
+    "price": 745,
+    "img": "drone-4"
+  },
+  {
+    "id": "5",
+    "name": "PowerVision PowerEgg X",
+    "brand": "PowerVision",
+    "price": 1949,
+    "img": "drone-5"
+  },
+  {
+    "id": "6",
+    "name": "Parrot Anafi FPV",
+    "brand": "Parrot",
+    "price": 399,
+    "img": "drone-6"
+  },
+  {
+    "id": "7",
+    "name": "DJI Phantom 4 Pro V2",
+    "brand": "DJI",
+    "price": 555,
+    "img": "drone-7"
+  },
+  {
+    "id": "8",
+    "name": "Yuneec Typhoon H",
+    "brand": "Yuneec",
+    "price": 679,
+    "img": "drone-8"
+  },
+  {
+    "id": "9",
+    "name": "Skydio 2+",
+    "brand": "Skydio",
+    "price": 299,
+    "img": "drone-9"
+  },
+  {
+    "id": "10",
+    "name": "Zenmuse X5S",
+    "brand": "Zenmuse",
+    "price": 1111,
+    "img": "drone-10"
+  },
+  {
+    "id": "11",
+    "name": "Sony Airpeak S1",
+    "brand": "Sony",
+    "price": 3850,
+    "img": "drone-11"
+  },
+  {
+    "id": "12",
+    "name": "Inspire 2",
+    "brand": "Inspire",
+    "price": 2099,
+    "img": "drone-12"
+  }
+]
