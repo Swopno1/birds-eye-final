@@ -2,8 +2,15 @@ import React, { useEffect, useState } from "react";
 import Item from "../Item/Item";
 import "./Product.css";
 
-const Product = () => {
+const Product = ({ addToCart, cartItems }) => {
   const [products, setProducts] = useState([]);
+
+  const handleAddToCart = (item) => {
+    if (cartItems.length < 4) {
+      const newCartItem = [...cartItems, item];
+      addToCart(newCartItem);
+    }
+  };
 
   //   Fetch data from the fake DB
   useEffect(() => {
@@ -15,7 +22,11 @@ const Product = () => {
   return (
     <div className="products">
       {products.map((product) => (
-        <Item product={product} key={product.id}></Item>
+        <Item
+          product={product}
+          key={product.id}
+          handleAddToCart={handleAddToCart}
+        ></Item>
       ))}
     </div>
   );

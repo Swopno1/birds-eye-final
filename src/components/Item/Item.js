@@ -3,16 +3,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./Item.css";
 
-const Item = ({ product }) => {
+const Item = ({ product, handleAddToCart }) => {
   const { name, price, brand, img } = product;
-  console.log(name);
+
   return (
     <div className="item">
       <img src={img} alt={name} />
       <h2>{name}</h2>
       <p className="brand">Brand: {brand}</p>
       <p className="price">Price: ${price}</p>
-      <button className="btn btn-addtocart">
+      <button
+        className="btn btn-addtocart"
+        onClick={() => handleAddToCart(product)}
+      >
         <p>ADD TO CART</p>
         <FontAwesomeIcon
           className="icon"

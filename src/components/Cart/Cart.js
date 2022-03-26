@@ -3,18 +3,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./Cart.css";
 
-const Cart = () => {
+const Cart = ({ cartItems }) => {
   return (
     <aside className="cart">
       <h3>Selected Drones</h3>
-      {/* This will be the generate dynamically */}
-      <div className="selected-items">
-        <img src="https://i.ibb.co/t4qHTMS/drone-1.jpg" alt="" />
-        <p>Product Name</p>
-        <button className="btn btn-delete">
-          <FontAwesomeIcon className="icon" icon={faTrashCan}></FontAwesomeIcon>
-        </button>
-      </div>
+      {
+        /* This will be the generate dynamically */
+        cartItems.map((item) => (
+          <CartItem data={item}></CartItem>
+        ))
+      }
+
       <button className="btn btn-choose">
         <p>CHOOSE 1 FOR ME</p>
       </button>
@@ -22,6 +21,18 @@ const Cart = () => {
         <p>CHOOSE AGAIN</p>
       </button>
     </aside>
+  );
+};
+
+const CartItem = ({ data }) => {
+  return (
+    <div className="selected-items">
+      <img src={data.img} alt="" />
+      <p>{data.name}</p>
+      <button className="btn btn-delete">
+        <FontAwesomeIcon className="icon" icon={faTrashCan}></FontAwesomeIcon>
+      </button>
+    </div>
   );
 };
 
