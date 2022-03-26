@@ -1,0 +1,11 @@
+.item {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid slategray;
+  border-radius: 8px;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 8px;
+}
