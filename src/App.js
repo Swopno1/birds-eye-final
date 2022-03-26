@@ -1,11 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Header from "./components/Header/Header";
+import Shop from "./components/Shop/Shop";
 
 function App() {
   return (
     <div className="App">
-      <h1>Birds Eye</h1>
-      <h2>Welcome to my site</h2>
+      <Header></Header>
+      <Shop></Shop>
     </div>
   );
 }
