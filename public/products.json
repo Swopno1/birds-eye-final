@@ -4,83 +4,83 @@
     "name": "DJI Mavic 3",
     "brand": "Mavic",
     "price": 1249,
-    "img": "drone-1"
+    "img": "https://i.ibb.co/t4qHTMS/drone-1.jpg"
   },
   {
     "id": "2",
     "name": "DJI Mini 2",
     "brand": "DJI",
     "price": 449,
-    "img": "drone-2"
+    "img": "https://i.ibb.co/z6JJFw1/drone-2.jpg"
   },
   {
     "id": "3",
     "name": "DJI Air 2S",
     "brand": "DJI",
     "price": 539,
-    "img": "drone-3"
+    "img": "https://i.ibb.co/nRr3cSB/drone-3.jpg"
   },
   {
     "id": "4",
     "name": "Autel EVO Nano",
     "brand": "Autel",
     "price": 745,
-    "img": "drone-4"
+    "img": "https://i.ibb.co/JtnFLG5/drone-4.jpg"
   },
   {
     "id": "5",
     "name": "PowerVision PowerEgg X",
     "brand": "PowerVision",
     "price": 1949,
-    "img": "drone-5"
+    "img": "https://i.ibb.co/wKgh70z/drone-5.jpg"
   },
   {
     "id": "6",
     "name": "Parrot Anafi FPV",
     "brand": "Parrot",
     "price": 399,
-    "img": "drone-6"
+    "img": "https://i.ibb.co/P9TqhcS/drone-6.jpg"
   },
   {
     "id": "7",
     "name": "DJI Phantom 4 Pro V2",
     "brand": "DJI",
     "price": 555,
-    "img": "drone-7"
+    "img": "https://i.ibb.co/KVGLTXD/drone-7.jpg"
   },
   {
     "id": "8",
     "name": "Yuneec Typhoon H",
     "brand": "Yuneec",
     "price": 679,
-    "img": "drone-8"
+    "img": "https://i.ibb.co/9Wn5v6V/drone-8.jpg"
   },
   {
     "id": "9",
     "name": "Skydio 2+",
     "brand": "Skydio",
     "price": 299,
-    "img": "drone-9"
+    "img": "https://i.ibb.co/2PgH2Sd/drone-9.jpg"
   },
   {
     "id": "10",
     "name": "Zenmuse X5S",
     "brand": "Zenmuse",
     "price": 1111,
-    "img": "drone-10"
+    "img": "https://i.ibb.co/58LZKt1/drone-10.jpg"
   },
   {
     "id": "11",
     "name": "Sony Airpeak S1",
     "brand": "Sony",
     "price": 3850,
-    "img": "drone-11"
+    "img": "https://i.ibb.co/gZy46h5/drone-11.jpg"
   },
   {
     "id": "12",
     "name": "Inspire 2",
     "brand": "Inspire",
     "price": 2099,
-    "img": "drone-12"
+    "img": "https://i.ibb.co/6D99RMT/drone-12.jpg"
   }
 ]
