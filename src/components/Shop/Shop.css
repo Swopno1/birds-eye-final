@@ -1,0 +1,24 @@
+/* Mobile first design */
+.shop {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* For TAB view */
+@media screen and (min-width: 768px) {
+  .shop {
+    width: 85%;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* For Desktop view */
+@media screen and (min-width: 992px) {
+  .shop {
+    width: 75%;
+    grid-template-columns: 3fr 1fr;
+  }
+}

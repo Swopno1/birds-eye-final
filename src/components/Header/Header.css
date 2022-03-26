@@ -1,3 +1,16 @@
+/* Mobile first design */
+.main-header {
+  text-align: center;
+}
+
 .main-logo {
   font-size: 36px;
+}
+
+/* For TAB view */
+@media screen and (min-width: 768px) {
+}
+
+/* For Desktop view */
+@media screen and (min-width: 992px) {
 }
