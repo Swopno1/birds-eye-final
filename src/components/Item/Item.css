@@ -1,11 +1,38 @@
 .item {
-  width: 300px;
+  width: 280px;
+  height: 420px;
   padding: 8px;
   border: 1px solid slategray;
   border-radius: 8px;
+  position: relative;
 }
 
 .item img {
   width: 100%;
   border-radius: 8px;
+}
+
+.item p {
+  line-height: 10px;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.btn-addtocart {
+  width: 100%;
+  border: none;
+  border-radius: 0 0 8px 8px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.icon {
+  padding-left: 8px;
 }
