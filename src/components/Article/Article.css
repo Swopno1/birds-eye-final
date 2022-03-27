@@ -1,9 +1,13 @@
 /* Mobile first design */
 .article {
   width: 95%;
-  margin: 40px auto;
+  margin: 20px auto;
   padding: 0 10px;
   border: 1px solid gainsboro;
+}
+
+.article p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* For TAB view */

@@ -16,6 +16,10 @@
   font-size: medium;
   border: 1px solid silver;
 }
+.btn-choose:hover,
+.btn-reset:hover {
+  background-color: azure;
+}
 
 .selected-items {
   display: flex;

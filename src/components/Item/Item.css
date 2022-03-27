@@ -33,6 +33,10 @@
   left: 0;
 }
 
+.btn-addtocart:hover {
+  background-color: cornsilk;
+}
+
 .icon {
   padding-left: 8px;
 }

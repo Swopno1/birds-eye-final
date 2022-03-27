@@ -24,7 +24,11 @@ const Shop = () => {
   };
 
   const resetCart = (data) => {
-    setCartItems(data);
+    if (cartItems.length !== 0) {
+      setCartItems(data);
+    } else {
+      alert("Chart is empty!");
+    }
   };
 
   useEffect(() => {
