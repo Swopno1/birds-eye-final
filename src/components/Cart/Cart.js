@@ -1,23 +1,37 @@
 import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Cart.css";
 
-const Cart = ({ cartItems }) => {
+const Cart = ({ cart }) => {
+  const [newCart, setNewCart] = useState(cart);
+
+  useEffect(() => {
+    setNewCart(cart);
+  }, [cart]);
+
+  const selectRandomItem = () => {
+    console.log(newCart);
+  };
+
+  const resetCart = () => {
+    setNewCart([]);
+  };
+
   return (
     <aside className="cart">
       <h3>Selected Drones</h3>
       {
         /* This will be the generate dynamically */
-        cartItems.map((item) => (
-          <CartItem data={item}></CartItem>
+        newCart.map((item) => (
+          <CartItem data={item} key={item.id}></CartItem>
         ))
       }
 
-      <button className="btn btn-choose">
+      <button className="btn btn-choose" onClick={selectRandomItem}>
         <p>CHOOSE 1 FOR ME</p>
       </button>
-      <button className="btn btn-reset">
+      <button className="btn btn-reset" onClick={resetCart}>
         <p>CHOOSE AGAIN</p>
       </button>
     </aside>

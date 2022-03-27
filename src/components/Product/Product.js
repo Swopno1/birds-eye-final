@@ -2,14 +2,11 @@ import React, { useEffect, useState } from "react";
 import Item from "../Item/Item";
 import "./Product.css";
 
-const Product = ({ addToCart, cartItems }) => {
+const Product = ({ addToCart }) => {
   const [products, setProducts] = useState([]);
 
   const handleAddToCart = (item) => {
-    if (cartItems.length < 4) {
-      const newCartItem = [...cartItems, item];
-      addToCart(newCartItem);
-    }
+    addToCart(item);
   };
 
   //   Fetch data from the fake DB
