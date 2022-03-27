@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import "./Cart.css";
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, resetCart }) => {
   const [newCart, setNewCart] = useState(cart);
 
   useEffect(() => {
@@ -11,13 +11,9 @@ const Cart = ({ cart }) => {
   }, [cart]);
 
   const selectRandomItem = () => {
+    // This function will not reset the cart item. As we have another button that reset the cart item.
     const randomItem = newCart[Math.floor(Math.random() * newCart.length)];
-    console.log(randomItem);
     setNewCart([randomItem]);
-  };
-
-  const resetCart = () => {
-    setNewCart([]);
   };
 
   return (
@@ -33,7 +29,7 @@ const Cart = ({ cart }) => {
       <button className="btn btn-choose" onClick={selectRandomItem}>
         <p>CHOOSE 1 FOR ME</p>
       </button>
-      <button className="btn btn-reset" onClick={resetCart}>
+      <button className="btn btn-reset" onClick={() => resetCart([])}>
         <p>CHOOSE AGAIN</p>
       </button>
     </aside>

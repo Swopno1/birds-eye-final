@@ -23,6 +23,10 @@ const Shop = () => {
     }
   };
 
+  const resetCart = (data) => {
+    setCartItems(data);
+  };
+
   useEffect(() => {
     setCart(cartItems);
   }, [cartItems]);
@@ -30,7 +34,7 @@ const Shop = () => {
   return (
     <div className="shop">
       <Product addToCart={addToCart}></Product>
-      <Cart cart={cart}></Cart>
+      <Cart cart={cart} resetCart={resetCart}></Cart>
     </div>
   );
 };
