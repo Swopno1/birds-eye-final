@@ -1,0 +1,21 @@
+/* Mobile first design */
+.article {
+  width: 95%;
+  margin: 40px auto;
+  padding: 0 10px;
+  border: 1px solid gainsboro;
+}
+
+/* For TAB view */
+@media screen and (min-width: 768px) {
+  .article {
+    width: 85%;
+  }
+}
+
+/* For Desktop view */
+@media screen and (min-width: 992px) {
+  .article {
+    width: 75%;
+  }
+}

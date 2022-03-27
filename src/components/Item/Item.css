@@ -1,8 +1,8 @@
 .item {
-  width: 280px;
+  width: 240px;
   height: 420px;
   padding: 8px;
-  border: 1px solid slategray;
+  border: 1px solid gainsboro;
   border-radius: 8px;
   position: relative;
 }
