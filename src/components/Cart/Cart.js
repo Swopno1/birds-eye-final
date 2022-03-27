@@ -11,7 +11,9 @@ const Cart = ({ cart }) => {
   }, [cart]);
 
   const selectRandomItem = () => {
-    console.log(newCart);
+    const randomItem = newCart[Math.floor(Math.random() * newCart.length)];
+    console.log(randomItem);
+    setNewCart([randomItem]);
   };
 
   const resetCart = () => {
