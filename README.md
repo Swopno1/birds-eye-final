@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Birds Eye
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About the App
+
+This project is created as part of Programming Hero assignment submission. This is a simple e-commerce app where we can select maximum 4 items. And also can choose any random item from the chosen items.
+
+This project is designed with vanila CSS and React. [Live App Preview Link](https://birds-eye-swopno.netlify.app).
 
 ## Available Scripts
 
