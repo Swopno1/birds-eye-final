@@ -11,9 +11,20 @@ const Cart = ({ cart, resetCart }) => {
   }, [cart]);
 
   const selectRandomItem = () => {
-    // This function will not reset the cart item. As we have another button that reset the cart item.
-    const randomItem = newCart[Math.floor(Math.random() * newCart.length)];
-    setNewCart([randomItem]);
+    // This function will also reset the cart item with the selected item.
+    if (newCart.length > 1) {
+      const randomItem = newCart[Math.floor(Math.random() * newCart.length)];
+      setNewCart([randomItem]);
+      resetCart([randomItem]);
+    } else {
+      alert("Please, select atleast 2 items.");
+    }
+  };
+
+  const removeCartItem = (data) => {
+    const removedCart = newCart.filter((item) => item.id !== data.id);
+    setNewCart(removedCart);
+    resetCart(removedCart);
   };
 
   return (
@@ -22,7 +33,11 @@ const Cart = ({ cart, resetCart }) => {
       {
         /* This will be the generate dynamically */
         newCart.map((item) => (
-          <CartItem data={item} key={item.id}></CartItem>
+          <CartItem
+            removeCartItem={removeCartItem}
+            data={item}
+            key={item.id}
+          ></CartItem>
         ))
       }
 
@@ -36,12 +51,12 @@ const Cart = ({ cart, resetCart }) => {
   );
 };
 
-const CartItem = ({ data }) => {
+const CartItem = ({ data, removeCartItem }) => {
   return (
     <div className="selected-items">
       <img src={data.img} alt="" />
       <p>{data.name}</p>
-      <button className="btn btn-delete">
+      <button className="btn btn-delete" onClick={() => removeCartItem(data)}>
         <FontAwesomeIcon className="icon" icon={faTrashCan}></FontAwesomeIcon>
       </button>
     </div>
